@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontePadrao: "Sansation", sans-serif;
+    --fonteTexto: "Roboto", sans-serif;
+    --fonteSerifada: "DM Serif Text", serif;
+}
+
+body {
+    background-color: black;
+    cursor: url('cursor-navegacao.png') 10 10, auto;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1 {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+header > h1:hover {
+}
+
+header > h1 > span.titulo-header {
+    margin-left: 30px;
+    font-style: italic;
+}
+
+header > menu {
+    padding-top: 50px;
+    padding-right: 40px;
+    font-family: var(--fonteSerifada);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+header > menu > a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 15px;
+}
+
+header > menu > a:hover {
+    text-shadow: 2px 0px 18px rgba(255, 255, 255, 0.918);
+    transition-duration: .7s;
+    cursor: url('imagens/cursor-navegacao.png') 10 10, auto;
+}
+
+header > menu > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 0.1px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+header > menu > a:hover::after {
+    transform: scaleX(1);
+}
+
+header > menu > a:active {
+    font-size: 15px;
+    transition-duration: .7s;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 20px;
+    margin: 20px;
+}

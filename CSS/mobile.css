@@ -39,6 +39,29 @@
     div.texto-apresentacao {
         font-size: 13px;
     }
+
+    div.titulo-caixa h1{
+        font-size: 25px;
+    }
+
+    div.texto-e-icons-contato h1 {
+        font-size: 20px;
+    }
+
+    div.texto-e-icons-contato p {
+        font-size: 15px;
+    } 
+
+    div.imagem-contato > img {
+        width: 127px;
+        height: 225px;
+    }
+
+    div.icons-contato img {
+        width: 30px;
+        height: 25px;
+    }
+
 }
 
 @media screen and (max-width: 880px) {

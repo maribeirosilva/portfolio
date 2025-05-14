@@ -149,7 +149,7 @@ div.titulo-caixa h1 {
     font-size: 35px;
     letter-spacing: 4px; 
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 150px;
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -157,14 +157,17 @@ div.titulo-caixa h1 {
 section.especialidade-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 100px;
 }
 
 div.especialidade-caixa {
+    display: flex;
     font-family: var(--fontePadrao);
     text-align: center;
     padding: 15px;
-    flex: 0 1 300px;
+    flex: 0 1 48%;
+    gap: 40px;
     border-radius: 3px;
     border: 1.3px solid black;
 }
@@ -184,7 +187,7 @@ div.css-caixa:hover {
 }
 
 div.js-caixa:hover {
-    box-shadow: 5px 5px 50px #FFDF00;
+    box-shadow: 5px 5px 50px #ffdd0086;
     color: #FFDF00;
     border: 1.3px solid black;
     transition-duration: 0.6s;
@@ -192,6 +195,13 @@ div.js-caixa:hover {
 
 div.py-caixa:hover {
     box-shadow: 5px 5px 50px #3D7AAB;
+    color: #3D7AAB;
+    border: 1.3px solid black;
+    transition-duration: 0.6s;
+}
+
+div.cmais-caixa:hover {
+    box-shadow: 5px 5px 50px #00589c9c;
     color: #3D7AAB;
     border: 1.3px solid black;
     transition-duration: 0.6s;
@@ -205,7 +215,7 @@ div.git-caixa:hover {
 }
 
 div.github-caixa:hover {
-    box-shadow: 5px 5px 50px black;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.363);
     border: 1.3px solid black;
     transition-duration: 0.6s;
 }
@@ -213,4 +223,42 @@ div.github-caixa:hover {
 div.especialidade-texto {
     display: none;
     transition-duration: 0.9s;
+}
+
+/* Contatos */
+
+section.contato-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.texto-e-icons-contato h1 {
+    font-family: var(--fonteTexto);
+    font-size: 40px;
+}
+
+div.texto-e-icons-contato span {
+    font-family: var(--fonteSerifada);
+    font-style: italic;
+}
+
+div.texto-e-icons-contato p {
+    font-family: var(--fonteTexto);
+    font-size: 21px;
+}
+
+div.texto-e-icons-contato > div.icons-contato {
+    padding-top: 15px;
+}
+
+div.texto-e-icons-contato > div.icons-contato > a {
+    padding: 3px;
+}
+
+div.texto-e-icons-contato > div.icons-contato > a:hover {
+    box-shadow: 2px 3px 4px rgba(46, 46, 46, 0.253);
+    border-radius: 10px;
+    transition-duration: .3s;
 }

@@ -32,6 +32,16 @@
 }
 
 @media screen and (max-width: 959px) {
+    i.material-icons {
+        display: flex;
+    }
+
+    header > menu {
+        display: none;          
+        flex-direction: column;   
+        padding-top: 20px;
+    }
+
      img.img-sobre {
         width: 40%;
     }
@@ -65,6 +75,21 @@
 }
 
 @media screen and (max-width: 880px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    header menu {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    i.material-icons {
+        display: block;
+    }
+
     section.sobre-container {
         display: flex;
         justify-content: center;

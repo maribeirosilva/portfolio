@@ -17,6 +17,10 @@
     --fonteSerifada: "DM Serif Text", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     cursor: url('cursor-navegacao.png') 10 10, auto;
@@ -90,6 +94,13 @@ header > menu > a:hover::after {
 header > menu > a:active {
     font-size: 15px;
     transition-duration: .7s;
+}
+
+i.material-icons {
+    color: white;
+    cursor: pointer;
+    display: none;
+    padding: 40px  30px;
 }
 
 /* SOBRE */
@@ -223,6 +234,39 @@ div.github-caixa:hover {
 div.especialidade-texto {
     display: none;
     transition-duration: 0.9s;
+}
+
+/* Projetos  */
+
+section.projeto-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+div.projeto-caixa {
+    text-align: center;
+    border-radius: 10px;
+}
+
+div.projeto-caixa > p {
+    font-family: var(--fontePadrao);
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px;
+}
+
+div.projeto-caixa > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+div.projeto-caixa > p > a:hover {
+    color: rgb(201, 201, 201);
+    text-decoration: underline;
+    transition-duration: .7s;
 }
 
 /* Contatos */

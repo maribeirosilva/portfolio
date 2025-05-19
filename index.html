@@ -6,26 +6,28 @@
     <title>Eportfólio</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/mobile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Mariana<br><span class="titulo-header">Ribeiro</span></h1>
         <menu>
-            <a href="#">Sobre</a>
-            <a href="#">Especialidade</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#especialidade">Especialidade</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </menu>
+        <i class="material-icons" onclick="clickMenu()">menu</i>
     </header>
     <main>
-        <section class="sobre-container">
+        <section class="sobre-container" id="sobre">
                 <div class="img-apresentacao"><img src="imagens/foto-eportfolio.png" class="img-sobre" alt="Foto da Mariana Ribeiro, dona do portfólio."></div>
                 <div class="texto-apresentacao">
                     <h2><mark>Sobre mim...</mark></h2>
                     <p>Meu nome é Mariana Ribeiro, tenho 17 anos e sou estudante da área de Tecnologia da Informação. Possuo conhecimentos em HTML, CSS, Python, JavaScript e GitHub. Tenho grande interesse pela área e desejo aprofundar cada vez mais meus estudos sobre tecnologia, suas ferramentas e seu constante desenvolvimento.</p>
                 </div>
         </section>
-        <section class="especialidades">
+        <section class="especialidades" id="especialidade">
             <div class="titulo-caixa">
                 <h1>Especialidades</h1>
             </div>
@@ -96,12 +98,36 @@
             </section>
         </section>
 
-        <!-- projetos -->
+        <div class="titulo-caixa" id="projetos">
+                <h1>PROJETOS</h1>
+            </div>
+        <section class="projeto-container">
+            <div class="projeto-caixa">
+                <p><a href="https://maribeirosilva.github.io/projeto-cordel/" target="_blank">Cordel animado</a></p>
+                <iframe src="https://maribeirosilva.github.io/projeto-cordel/" frameborder="0"></iframe>
+            </div>
+            </div>
+
+            <div class="projeto-caixa">
+                <p><a href="https://maribeirosilva.github.io/projeto-android/" target="_blank">Projeto Android</a></p>
+                <iframe src="https://maribeirosilva.github.io/projeto-android/" frameborder="0"></iframe>
+            </div>
+
+            <div class="projeto-caixa">
+                <p><a href="https://maribeirosilva.github.io/projeto-fluxwalk/" target="_blank">FluxWalk</a></p>
+                <iframe src="https://maribeirosilva.github.io/projeto-fluxwalk/" frameborder="0"></iframe>
+            </div>
+
+            <div class="projeto-caixa">
+                <p><a href="https://maribeirosilva.github.io/projeto-login/" target="_blank">Login simples</a></p>
+                <iframe src="https://maribeirosilva.github.io/projeto-login/" frameborder="0"></iframe>
+            </div>
+        </section>
 
             <div class="titulo-caixa">
                 <h1>CONTATOS</h1>
             </div>
-        <section class="contato-container">
+        <section class="contato-container" id="contato">
             <div class="imagem-contato">
                 <img src="imagens/elemento300-contato.png" alt="">
             </div>
